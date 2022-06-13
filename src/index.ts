@@ -1,3 +1,17 @@
+function setVector() {
+  let longitud = Number(
+    prompt("Indique  la cantidad de nros que desea incorporar al Vector : ")
+  );
+  let vector: number[] = new Array(longitud);
+  for (let index = 0; index < vector.length; index++) {
+    vector[index] = Math.floor(Math.random() * 10);
+  }
+  return vector;
+}
+
+//setVector tambien se puede dividir en dos funciones uno para dimensionar el array
+//otro para cargar aleatorio el array
+
 let TamanoArreglo: number = 0;
 TamanoArreglo = Number(
   prompt("Indique  la cantidad de nros que desea incorporar al Vector : ")
